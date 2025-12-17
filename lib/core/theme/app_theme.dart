@@ -1,20 +1,45 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Core brand colors
-  static const Color primary = Color(0xFF171F2F);      // Dark Navy
-  static const Color secondary = Color(0xFF202837);    // Dark Blue-Grey
-  static const Color accent = Color(0xFFD7FB00);       // Neon Yellow
+  // ================= Core Brand Colors (v0 aligned) =================
 
-  // Neutrals
-  static const Color white = Color(0xFFFFFFFF);
+  /// --primary: 23 31 47
+  static const Color primary = Color(0xFF171F2F); // Dark Navy
 
-  // Optional aliases (for readability)
-  static const Color background = primary;
-  static const Color card = secondary;
+  /// --secondary: 32 40 55
+  static const Color secondary = Color(0xFF202837); // Dark Blue-Grey
+
+  /// --accent: 215 251 0
+  static const Color accent = Color(0xFFD7FB00); // Neon Yellow
+
+  /// --accent-foreground: 23 31 47
+  static const Color accentForeground = Color(0xFF171F2F);
+
+  // ================= Background & Surfaces =================
+
+  /// --background: 255 255 255
+  static const Color background = Color(0xFFFFFFFF);
+
+  /// --card: 255 255 255
+  static const Color card = Color(0xFFFFFFFF);
+
+  /// --muted: 243 244 246
+  static const Color muted = Color(0xFFF3F4F6);
+
+  /// --border: 229 231 235
+  static const Color border = Color(0xFFE5E7EB);
+
+  // ================= Text Colors =================
+
+  /// --foreground: 23 31 47
+  static const Color textPrimary = Color(0xFF171F2F);
+
+  /// --muted-foreground: 107 114 128
+  static const Color textSecondary = Color(0xFF6B7280);
+
+  // ================= Utility / Aliases =================
+
+  /// Keep these aliases for backward compatibility
   static const Color highlight = accent;
-
-  // Text colors
-  static const Color textPrimary = white;
-  static const Color textSecondary = Color(0xFFBFC5D0); // soft grey if needed
+  static const Color white = Color(0xFFFFFFFF);
 }
